@@ -5,6 +5,7 @@ MAINTAINER Levent YILDIZ <dev.levent.yildiz@gmail.com>
 RUN apt-get update
 RUN apt-get install openjdk-8-jdk -y
 RUN apt-get install vim -y
+RUN apt-get install git -y
 RUN apt-get install -y patch
 RUN apt-get install -y wget
 RUN apt-get install -y openssh-server
