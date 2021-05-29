@@ -1,0 +1,14 @@
+version: "3"
+services:
+  database:
+    image: "postgres:latest"
+    ports:
+      - 5432:5432
+
+    environment:
+      POSTGRES_USER: root 
+      POSTGRES_PASSWORD: a12345
+      POSTGRES_DB: my_db 
+
+    volumes:
+      - ./db-data/:/var/lib/docker/volumes/postgres-data/_data/
